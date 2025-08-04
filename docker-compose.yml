@@ -1,0 +1,11 @@
+services:
+
+  json-hero:
+    image: json-hero:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8787"
+    environment:
+      - NODE_ENV=production
